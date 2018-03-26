@@ -1,0 +1,28 @@
+#NORMAL
+execute @a[score_mig_attractrepel_min=0,score_mig_attractrepel=0,tag=route_12,score_mig_dive_timer_min=890,score_mig_dive_timer=900] ~ ~ ~ detect ~ ~ ~ water * /summon squid ~ ~ ~ {CustomName:"§1Squid",CustomNameVisible:0}
+execute @a[score_mig_attractrepel_min=0,score_mig_attractrepel=0,tag=route_12,score_mig_dive_timer_min=890,score_mig_dive_timer=900] ~ ~ ~ detect ~ ~ ~ water * /tellraw @a[score_mig_attractrepel_min=0,score_mig_attractrepel=0,tag=route_12,score_mig_dive_timer_min=890,score_mig_dive_timer=900] {"text":"§1Squid Spawned"}
+execute @a[score_mig_attractrepel_min=0,score_mig_attractrepel=0,tag=route_12,score_mig_swim_timer_min=890,score_mig_swim_timer=900] ~ ~ ~ detect ~ ~ ~ water * /summon squid ~ ~ ~ {CustomName:"§1Squid",CustomNameVisible:0}
+execute @a[score_mig_attractrepel_min=0,score_mig_attractrepel=0,tag=route_12,score_mig_swim_timer_min=890,score_mig_swim_timer=900] ~ ~ ~ detect ~ ~ ~ water * /tellraw @a[score_mig_attractrepel_min=0,score_mig_attractrepel=0,tag=route_12,score_mig_swim_timer_min=890,score_mig_swim_timer=900] {"text":"§1Squid Spawned"}
+scoreboard players add @a[score_mig_attractrepel_min=0,score_mig_attractrepel=0,tag=route_12,score_mig_dive_timer_min=890,score_mig_dive_timer=900] mig_dive_timer 10
+scoreboard players add @a[score_mig_attractrepel_min=0,score_mig_attractrepel=0,tag=route_12,score_mig_swim_timer_min=890,score_mig_swim_timer=900] mig_swim_timer 10
+#ATTRACT
+execute @a[score_mig_attractrepel_min=1,tag=route_12,score_mig_dive_timer_min=800,score_mig_dive_timer=900] ~ ~ ~ detect ~ ~ ~ water * /summon squid ~ ~ ~ {CustomName:"§1Squid",CustomNameVisible:0}
+execute @a[score_mig_attractrepel_min=1,tag=route_12,score_mig_dive_timer_min=800,score_mig_dive_timer=900] ~ ~ ~ detect ~ ~ ~ water * /tellraw @a[score_mig_attractrepel_min=1,tag=route_12,score_mig_dive_timer_min=800,score_mig_dive_timer=900] {"text":"§1Squid Spawned"}
+execute @a[score_mig_attractrepel_min=1,tag=route_12,score_mig_swim_timer_min=800,score_mig_swim_timer=900] ~ ~ ~ detect ~ ~ ~ water * /summon squid ~ ~ ~ {CustomName:"§1Squid",CustomNameVisible:0}
+execute @a[score_mig_attractrepel_min=1,tag=route_12,score_mig_swim_timer_min=800,score_mig_swim_timer=900] ~ ~ ~ detect ~ ~ ~ water * /tellraw @a[score_mig_attractrepel_min=1,tag=route_12,score_mig_swim_timer_min=800,score_mig_swim_timer=900] {"text":"§1Squid Spawned"}
+scoreboard players add @a[score_mig_attractrepel_min=1,tag=route_12,score_mig_dive_timer_min=800,score_mig_dive_timer=900] mig_dive_timer 100
+scoreboard players add @a[score_mig_attractrepel_min=1,tag=route_12,score_mig_swim_timer_min=800,score_mig_swim_timer=900] mig_swim_timer 100
+#REPEL
+execute @a[score_mig_attractrepel=-1,tag=route_12,score_mig_dive_timer_min=895,score_mig_dive_timer=900] ~ ~ ~ detect ~ ~ ~ water * /summon squid ~ ~ ~ {CustomName:"§1Squid",CustomNameVisible:0}
+execute @a[score_mig_attractrepel=-1,tag=route_12,score_mig_dive_timer_min=895,score_mig_dive_timer=900] ~ ~ ~ detect ~ ~ ~ water * /tellraw @a[score_mig_attractrepel=-1,tag=route_12,score_mig_dive_timer_min=895,score_mig_dive_timer=900] {"text":"§1Squid Spawned"}
+execute @a[score_mig_attractrepel=-1,tag=route_12,score_mig_swim_timer_min=895,score_mig_swim_timer=900] ~ ~ ~ detect ~ ~ ~ water * /summon squid ~ ~ ~ {CustomName:"§1Squid",CustomNameVisible:0}
+execute @a[score_mig_attractrepel=-1,tag=route_12,score_mig_swim_timer_min=895,score_mig_swim_timer=900] ~ ~ ~ detect ~ ~ ~ water * /tellraw @a[score_mig_attractrepel=-1,tag=route_12,score_mig_swim_timer_min=895,score_mig_swim_timer=900] {"text":"§1Squid Spawned"}
+scoreboard players add @a[score_mig_attractrepel=-1,tag=route_12,score_mig_dive_timer_min=895,score_mig_dive_timer=900] mig_dive_timer 10
+scoreboard players add @a[score_mig_attractrepel=-1,tag=route_12,score_mig_swim_timer_min=895,score_mig_swim_timer=900] mig_swim_timer 10
+#SHINY
+execute @a[score_mig_attractrepel=3,tag=route_12,score_mig_dive_timer_min=666,score_mig_dive_timer=666,score_mig_shinyness_min=666,score_mig_shinyness=666] ~ ~ ~ detect ~ ~ ~ water * /summon squid ~ ~ ~ {CustomName:"§b§l✧§1Squid§b§l✧",CustomNameVisible:0,PersistenceRequired:1,Tags:["shiny_1"],DeathLootTable:"pokeserver:mobs_in_grass/shiny/squid0}
+execute @a[score_mig_attractrepel=3,tag=route_12,score_mig_dive_timer_min=666,score_mig_dive_timer=666,score_mig_shinyness_min=666,score_mig_shinyness=666] ~ ~ ~ detect ~ ~ ~ water * /tellraw @a[score_mig_attractrepel=3,tag=route_12,score_mig_dive_timer_min=666,score_mig_dive_timer=666,score_mig_shinyness_min=666,score_mig_shinyness=666] {"text":"§b§l✧§1Squid Spawned§b§l✧"}
+execute @a[score_mig_attractrepel=3,tag=route_12,score_mig_swim_timer_min=666,score_mig_swim_timer=666,score_mig_shinyness_min=666,score_mig_shinyness=666] ~ ~ ~ detect ~ ~ ~ water * /summon squid ~ ~ ~ {CustomName:"§b§l✧§1Squid§b§l✧",CustomNameVisible:0,PersistenceRequired:1,Tags:["shiny_1"],DeathLootTable:"pokeserver:mobs_in_grass/shiny/squid0}
+execute @a[score_mig_attractrepel=3,tag=route_12,score_mig_swim_timer_min=666,score_mig_swim_timer=666,score_mig_shinyness_min=666,score_mig_shinyness=666] ~ ~ ~ detect ~ ~ ~ water * /tellraw @a[score_mig_attractrepel=3,tag=route_12,score_mig_swim_timer_min=666,score_mig_swim_timer=666,score_mig_shinyness_min=666,score_mig_shinyness=666] {"text":"§b§l✧§1Squid Spawned§b§l✧"}
+scoreboard players add @a[score_mig_attractrepel=3,tag=route_12,score_mig_dive_timer_min=666,score_mig_dive_timer=666,score_mig_shinyness_min=666,score_mig_shinyness=666] mig_dive_timer 5
+scoreboard players add @a[score_mig_attractrepel=3,tag=route_12,score_mig_swim_timer_min=666,score_mig_swim_timer=666,score_mig_shinyness_min=666,score_mig_shinyness=666] mig_swim_timer 5
